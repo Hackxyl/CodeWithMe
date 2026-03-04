@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CodeWithMe — Learn Tech the Fun Way</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="brand">
+    <div class="brand-icon">💻</div>
+    Code<span>WithMe</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Courses</a></li>
+    <li><a href="#">About Me</a></li>
+    <li><a href="#">Blog</a></li>
+  </ul>
+  <button class="nav-cta" onclick="window.location.href='pages/dashboard.html'">My Dashboard</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow"><span class="wave">👋</span> Hey there, future developer!</div>
+    <h1>Learn to <em>code</em> with a<br><span class="hl">real human</span> by your side.</h1>
+    <p>No confusing video series. No generic tutorials. Just you, your instructor, and a clear step-by-step plan designed around how <em>you</em> learn best.</p>
+    <div class="hero-btns">
+      <button class="btn-primary" onclick="document.getElementById('courses-sec').scrollIntoView({behavior:'smooth'})">🚀 Explore Courses</button>
+      <button class="btn-ghost" onclick="window.location.href='pages/dashboard.html'">View My Dashboard</button>
+    </div>
+    <div class="hero-stats">
+      <div><div class="stat-num">1,400+</div><div class="stat-label">Students taught 🎉</div></div>
+      <div><div class="stat-num">98%</div><div class="stat-label">Completion rate ✅</div></div>
+      <div><div class="stat-num">4.9★</div><div class="stat-label">Average rating ⭐</div></div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hv-header">
+      <div class="hv-dots"><div class="hv-dot"></div><div class="hv-dot"></div><div class="hv-dot"></div></div>
+      <div class="hv-code">
+        <span class="cm">// lesson 5 — functions</span><br>
+        <span class="kw">function</span> <span class="fn">greetStudent</span>(name) {<br>
+        &nbsp;&nbsp;<span class="kw">return</span> <span class="str">`Hello, ${name}! 👋`</span>;<br>
+        }<br><br>
+        <span class="cm">// Live with your instructor 🚀</span><br>
+        <span class="fn">greetStudent</span>(<span class="str">"You"</span>);
+      </div>
+    </div>
+    <div class="hv-body">
+      <div class="hv-row">
+        <div class="hv-icon" style="background:#f0fdf4;">✅</div>
+        <div><div class="hv-name">HTML & CSS Basics</div><div class="hv-sub">Completed · 2h 15min</div></div>
+      </div>
+      <div class="hv-row act">
+        <div class="hv-icon" style="background:var(--teal-light);">🔴</div>
+        <div><div class="hv-name" style="color:var(--teal-dark)">JavaScript Functions</div><div class="hv-sub" style="color:var(--teal)">Live now · Join session</div></div>
+      </div>
+      <div class="hv-row">
+        <div class="hv-icon" style="background:#eff6ff;">🔒</div>
+        <div><div class="hv-name">DOM & Events</div><div class="hv-sub">Up next · Tomorrow 3PM</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY SECTION -->
+<section class="section">
+  <div class="eyebrow">✨ Why CodeWithMe?</div>
+  <h2 class="sec-title">Learning that actually works</h2>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="why-icon">🧑‍🏫</div>
+      <div class="why-title">Real instructor, not recordings</div>
+      <div class="why-desc">Every session is live with your instructor. Ask questions, get feedback, and learn at your pace — no lonely YouTube rabbit holes.</div>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">🗺️</div>
+      <div class="why-title">A clear roadmap just for you</div>
+      <div class="why-desc">We review your goals before you start. Your curriculum is tailored so every lesson makes sense and builds on the last.</div>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">🛠️</div>
+      <div class="why-title">Build real, working projects</div>
+      <div class="why-desc">Every course ends with portfolio-ready projects. Show employers real proof of your skills — not just a certificate.</div>
+    </div>
+  </div>
+</section>
+
+<!-- COURSES -->
+<section class="section" id="courses-sec">
+  <div class="eyebrow">👩‍💻 All Courses</div>
+  <h2 class="sec-title">Pick your path &amp; let's build! 🚀</h2>
+  <p class="sec-sub">All courses are taught live, one-on-one, with real projects and instructor feedback the whole way through.</p>
+  <div class="courses-grid" id="courses-grid">
+    <!-- injected by js/courses.js -->
+  </div>
+</section>
+
+<footer><strong>CodeWithMe</strong> · Real instruction. Real results. 💚 · © 2026</footer>
+
+<script src="js/courses.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
