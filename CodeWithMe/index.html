@@ -5,26 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CodeWithMe — Learn Tech the Fun Way</title>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
 <!-- NAV -->
 <nav>
-  <div class="brand">
-    <div class="brand-icon">💻</div>
-    Code<span>WithMe</span>
-  </div>
+  <a href="#hero-sec" class="brand"><div class="brand-icon">💻</div>Code<span>WithMe</span></a>
   <ul class="nav-links">
-    <li><a href="index.html">Courses</a></li>
-    <li><a href="#">About Me</a></li>
-    <li><a href="#">Blog</a></li>
+    <li><a href="#why-sec">Why CodeWithMe</a></li>
+    <li><a href="#courses-sec">Courses</a></li>
+    <li><a href="#about-sec">About Me</a></li>
+    <li><a href="#blog-sec">Blog</a></li>
   </ul>
-  <button class="nav-cta" onclick="window.location.href='pages/dashboard.html'">My Dashboard</button>
+  <button class="nav-cta" onclick="window.location.href='pages/dashboard.html'">Dashboard</button>
 </nav>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero" id="hero-sec">
   <div class="hero-left">
     <div class="hero-eyebrow"><span class="wave">👋</span> Hey there, future developer!</div>
     <h1>Learn to <em>code</em> with a<br><span class="hl">real human</span> by your side.</h1>
@@ -69,7 +67,7 @@
 </section>
 
 <!-- WHY SECTION -->
-<section class="section">
+<section class="section" id="why-sec">
   <div class="eyebrow">✨ Why CodeWithMe?</div>
   <h2 class="sec-title">Learning that actually works</h2>
   <div class="why-grid">
@@ -98,6 +96,63 @@
   <p class="sec-sub">All courses are taught live, one-on-one, with real projects and instructor feedback the whole way through.</p>
   <div class="courses-grid" id="courses-grid">
     <!-- injected by js/courses.js -->
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about-sec">
+  <div class="eyebrow">👋 Hi — I'm the instructor</div>
+  <h2 class="sec-title">About CodeWithMe</h2>
+  <p class="sec-sub">I built CodeWithMe to teach programming live, one-on-one. Lessons are hands-on, project-driven, and tailored to your goals. Whether you're starting with HTML or building full-stack apps, I'm here to guide you step-by-step.</p>
+
+  <h3 style="font-size: 1.2rem; font-weight: 800; margin: 28px 0 14px; color: var(--ink);">What I teach</h3>
+  <ul class="teach-list">
+    <li>HTML, CSS, and accessible UI</li>
+    <li>JavaScript fundamentals and modern workflows</li>
+    <li>Project-based learning and portfolio building</li>
+  </ul>
+
+  <p class="cta-text">Ready to start your coding journey? Head to the <a href="#courses-sec">courses</a> section or open your <a href="pages/dashboard.html">dashboard</a>.</p>
+</section>
+
+<!-- BLOG -->
+<section class="section" id="blog-sec">
+  <div class="eyebrow">📝 Latest Posts</div>
+  <h2 class="sec-title">Learn from real experience</h2>
+  <p class="sec-sub">Tips, tricks, and lessons from teaching hundreds of students one-on-one.</p>
+  <div class="blog-grid">
+    <article class="blog-card">
+      <div class="blog-date">Mar 4, 2026</div>
+      <h3 class="blog-title">5 JavaScript Concepts Every Beginner Should Master</h3>
+      <p class="blog-excerpt">Starting your JavaScript journey? These 5 core concepts will accelerate your learning and set you up for success in modern web development.</p>
+      <div class="blog-meta">
+        <span class="blog-category">JavaScript</span>
+        <span class="blog-reading-time">5 min read</span>
+      </div>
+      <a href="#" class="blog-link">Read more →</a>
+    </article>
+
+    <article class="blog-card">
+      <div class="blog-date">Feb 28, 2026</div>
+      <h3 class="blog-title">Why One-on-One Coding Mentorship Works Better</h3>
+      <p class="blog-excerpt">Discover why personalized instruction beats generic tutorials. Real mentorship adapts to your pace, goals, and learning style.</p>
+      <div class="blog-meta">
+        <span class="blog-category">Learning</span>
+        <span class="blog-reading-time">4 min read</span>
+      </div>
+      <a href="#" class="blog-link">Read more →</a>
+    </article>
+
+    <article class="blog-card">
+      <div class="blog-date">Feb 21, 2026</div>
+      <h3 class="blog-title">Building Your First Portfolio Project: A Step-by-Step Guide</h3>
+      <p class="blog-excerpt">Turn your skills into a portfolio piece that employers love. Walk through planning, building, and showcasing a real-world project.</p>
+      <div class="blog-meta">
+        <span class="blog-category">Projects</span>
+        <span class="blog-reading-time">8 min read</span>
+      </div>
+      <a href="#" class="blog-link">Read more →</a>
+    </article>
   </div>
 </section>
 
